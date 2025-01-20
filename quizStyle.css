@@ -1,0 +1,178 @@
+/* -------- General Style -------- */
+body {
+  font-family: 'Caveat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+.hidden {
+  /* change back to hidden after styling */
+  display: block !important;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h1,
+h2 {
+  font-weight: bold;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* -------- Landing Page -------- */
+
+#landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+#landing button {
+  background: #ff6f61;
+  /* Remove default border */
+  border: none;
+  padding: 15px 30px;
+  font-size: 1rem;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  /* Default border color */
+  border-color: transparent;
+
+  /* Smooth transitions */
+  transition: background 0.3s ease-in-out, transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+#landing button:hover {
+  background: #ff4b3a;
+  /* Add scaling effect on hover */
+  transform: scale(1.2);
+  /* Change border color on hover */
+  border-color: #ff6f61;
+}
+
+/* -------- Quiz Section -------- */
+#quiz {
+  width: 90%;
+  max-width: 600px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.progress-bar {
+  width: 100%;
+  height: 20px;
+  /* Light background to see the bar */
+  background: rgba(255, 255, 255, 0.2);
+  /* Rounded corners */
+  border-radius: 5px;
+  /* Prevents content from spilling out */
+  overflow: hidden;
+}
+
+.progress {
+  width: 10%;
+  /* Matches the height of the .progress-bar */
+  height: 100%;
+  background: #62c565;
+  transition: width 0.5s ease-in-out;
+}
+
+.question h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.answers {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.answers button {
+  display: flex;
+  /* Arranges child elements (image and text) in a column */
+  flex-direction: column;
+  /* Center the content horizontally within the button */
+  align-items: center;
+  /* Add spacing between the child elements (image and text) */
+  gap: 10px;
+  padding: 10px;
+  /* Sets a semi-transparent white background */
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  /* Smoothly animate transformations (e.g., scaling) and border-color changes */
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.answers button img {
+  width: 90px;
+  height: 90px;
+  /* Ensures the image is resized to cover its container while maintaining aspect ratio */
+  object-fit: cover;
+  /* Applies a circular shape to img */
+  border-radius: 50%;
+}
+
+.answers button span {
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  color: rgba(231, 231, 231, 0.677);
+}
+
+.answers button:hover {
+  transform: scale(1.02);
+  border: 8px solid;
+  border-color: #ff6f61;
+}
+
+/* Keep adding class elements, 
+don't forget to adjust hidden 
+components when styling is completed to add logic */
+
+
+/* -------- Responsive design -------- */
+
+/* Applying styles when the viewport width is 600px or smaller */
+@media (max-width: 600px) {
+
+  #quiz {
+    /* Adjust the quiz container to take up the full width of the screen */
+    width: 100%;
+    /* Reducing the padding for smaller screens to maximize usable space */
+    padding: 15px;
+  }
+
+  /* Change the grid layout of the answers to display one answer per row */
+  .answers {
+
+    /* One column layout for better readability on small screens */
+    grid-template-columns: 1fr;
+  }
+}

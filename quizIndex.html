@@ -12,13 +12,60 @@
     rel="stylesheet">
   <link rel="stylesheet" href="/quizStyle.css">
 </head>
-<header>
-  <h1>Discover Your Inner Designer</h1>
-  <button id="startQuiz">Let's Get Started</button>
-</header>
 
 <body>
 
+  <!-- Landing Page -->
+  <header id="landing">
+    <h1>How Creative Are You?</h1>
+    <p>Take this fun quiz to discover your creative persona and get inspired!</p>
+    <button id="startQuiz">Start Quiz</button>
+  </header>
+
+  <!-- Quiz Section -->
+  <main id="quiz">
+    <!-- add above after styling, class="hidden" -->
+    <!-- Progress Bar -->
+    <div class="progress-bar">
+      <div class="progress" style="width: 20%;"></div> <!-- Static 50% progress for preview -->
+    </div>
+
+    <!-- Question Container -->
+    <section id="questions">
+      <div class="question">
+        <h2>Pick a design style you like:</h2>
+        <div class="answers">
+          <button class="answer">
+            <img src="https://via.placeholder.com/60" alt="Minimalist">
+            <span>Minimalist</span>
+          </button>
+          <button class="answer">
+            <img src="https://via.placeholder.com/60" alt="Vintage">
+            <span>Vintage</span>
+          </button>
+          <button class="answer">
+            <img src="https://via.placeholder.com/60" alt="Bold">
+            <span>Bold</span>
+          </button>
+          <button class="answer">
+            <img src="https://via.placeholder.com/60" alt="Elegant">
+            <span>Elegant</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Results Page -->
+  <section id="results">
+    <h2>Your Creative Persona: <span id="persona">The Visionary</span></h2>
+    <p id="description">You’re a trailblazer who sees possibilities where others see limits. Your ideas are bold,
+      futuristic, and ahead of the curve.</p>
+    <button id="restartQuiz">Take the Quiz Again</button>
+  </section>
+
+  <script src="/quizScript.js"></script>
 </body>
+
 
 </html>
