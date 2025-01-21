@@ -3,19 +3,17 @@ body {
   font-family: 'Caveat', sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, #6110f9, #e2bb1f);
-  /* background: linear-gradient(to right, #6a11cb, #2575fc); */
+  background: linear-gradient(to right, #6a11cb, #2575fc);
   color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 80vh;
+  min-height: 100vh;
 }
 
 .hidden {
-  /* change back to hidden after styling */
-  display: block !important;
+  display: none !important;
 }
 
 h1 {
@@ -144,13 +142,51 @@ p {
 .answers button span {
   font-size: 1.5rem;
   font-family: sans-serif;
-  color: rgba(231, 231, 231, 0.677);
+  color: rgba(255, 255, 255, 0.677);
 }
 
 .answers button:hover {
   transform: scale(1.02);
   border: 8px solid;
   border-color: #ff6f61;
+}
+
+/* -------- Results Section -------- */
+#results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 25px;
+}
+
+#results.hidden {
+  display: none;
+}
+
+#results h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+#results button {
+  background-color: #4caf50;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  color: white;
+  border-radius: 28px;
+  cursor: pointer;
+  /* Default border color */
+  border-color: transparent;
+
+  /* Smooth transitions */
+  transition: background 0.3s ease-in-out, transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+#results button:hover {
+  background: #388e3c;
+  transform: scale(1.1);
 }
 
 /* Keep adding class elements, 
