@@ -1,15 +1,24 @@
 /* -------- General Style -------- */
 body {
-  font-family: 'Caveat', sans-serif;
+  font-family: 'Special Elite', sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, #6a11cb, #2575fc);
+  background-color: #2c3e50;
+  /* Charcoal Gray */
+
+  /* background: linear-gradient(to right, #4facfe, #00f2fe); */
+  /* background: linear-gradient(to right, #6a11cb, #2575fc); */
   color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+}
+
+header p {
+  padding: 40px;
+  font-size: 1.8rem;
 }
 
 .hidden {
@@ -43,18 +52,18 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
-  padding: 20px;
+  gap: 10px;
+  padding: 10px;
 }
 
 #landing button {
   background: #ff6f61;
   /* Remove default border */
   border: none;
-  padding: 15px 30px;
-  font-size: 1rem;
+  padding: 15px 40px;
+  font-size: 2rem;
   color: white;
-  border-radius: 25px;
+  border-radius: 40px;
   cursor: pointer;
   /* Default border color */
   border-color: transparent;
@@ -102,8 +111,8 @@ p {
 }
 
 .question h2 {
-  font-size: 3rem;
-  margin-bottom: 20px;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
 }
 
 .answers {
@@ -122,7 +131,7 @@ p {
   gap: 10px;
   padding: 10px;
   /* Sets a semi-transparent white background */
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.872);
   border: 2px solid transparent;
   border-radius: 10px;
   cursor: pointer;
@@ -140,9 +149,9 @@ p {
 }
 
 .answers button span {
-  font-size: 1.5rem;
-  font-family: sans-serif;
-  color: rgba(255, 255, 255, 0.677);
+  font-size: 1.2rem;
+  /* font-family: 'Special Elite', sans-serif; */
+  color: rgba(58, 58, 58, 0.951);
 }
 
 .answers button:hover {
@@ -189,15 +198,22 @@ p {
   transform: scale(1.1);
 }
 
-/* Keep adding class elements, 
-don't forget to adjust hidden 
-components when styling is completed to add logic */
+#persona {
+  /* Forces the content onto a new line */
+  display: block;
+  /* Highlight color */
+  color: #ff6f61;
+}
 
+#description {
+  font-size: 1.5rem;
+  padding: 20px;
+}
 
 /* -------- Responsive design -------- */
 
 /* Applying styles when the viewport width is 600px or smaller */
-@media (max-width: 600px) {
+@media (max-width: 640px) {
 
   #quiz {
     /* Adjust the quiz container to take up the full width of the screen */

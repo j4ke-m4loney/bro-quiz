@@ -4,12 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>How Creative Are You, Quiz App</title>
+  <title>What kind of bro are you quiz</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/quizStyle.css">
 </head>
 
@@ -17,8 +15,8 @@
 
   <!-- Landing Page -->
   <header id="landing">
-    <h1>How Creative Are You?</h1>
-    <p>Take this fun quiz to discover your creative persona and get inspired!</p>
+    <h1>What kind of 'Bro' are you? &nbsp;🫵</h1> <!--  &nbsp means non breaking space-->
+    <p>This quiz will help you discover your true bro persona</p>
     <button id="startQuiz">Start Quiz</button>
   </header>
 
@@ -33,14 +31,18 @@
     <section id="questions">
       <div class="question">
         <h2></h2> <!-- Question text will be injected here -->
-        <div class="answers"></div> <!-- Answer options will be injected here -->
+        <div class="answers"></div> <!-- Answer options will be injected here with span in js-->
       </div>
     </section>
   </main>
 
   <!-- Results Page -->
   <section id="results" class="hidden">
-    <h2>Your Creative Persona is... <span id="persona"></span></h2>
+    <h2>Your bro 👨 type is:
+      <br>
+      <br>
+      <span id="persona"></span>
+    </h2>
     <p id="description"></p>
     <button id="restartQuiz">Take the Quiz Again</button>
   </section>

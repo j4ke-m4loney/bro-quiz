@@ -11,53 +11,98 @@ const progressBar = document.querySelector('.progress');
 // #2: Defining my quiz questions
 const questions = [
   {
-    text: "Pick a design you like:",
+    text: "It’s Friday night. Tell me, what’s your game plan? 🌙",
     options: [
-      { label: "Minimalist", score: "minimalist" },
-      { label: "Vintage", score: "vintage" },
-      { label: "Bold", score: "bold" },
-      { label: "Elegant", score: "elegant" },
+      { label: "Hit the bars", score: "rideOrDie" },
+      { label: "Stay home, chill", score: "chillPhilosopher" },
+      { label: "Go with the flow", score: "hypeBro" },
+      { label: "Find live music", score: "wildCard" },
     ],
   },
   {
-    text: "Choose a colour palette that resonates with you vibe:",
+    text: "What’s your go-to workout vibe? 💪",
     options: [
-      { label: "Soft Pastels", score: "minimalist" },
-      { label: "Bold and Vibrant", score: "bold" },
-      { label: "Neutral Tones", score: "elegant" },
-      { label: "Monochromatic", score: "vintage" },
+      { label: "Yoga and zen", score: "chillPhilosopher" },
+      { label: "Group fitness", score: "hypeBro" },
+      { label: "Hiking/Running trails", score: "wildCard" },
+      { label: "Heavy lifting", score: "rideOrDie" },
     ],
   },
   {
-    text: "Choose what kind of movie you like:",
+    text: "For a bet? What’s your move? 🎰",
     options: [
-      { label: "Rocky", score: "minimalist" },
-      { label: "The Revenant", score: "bold" },
-      { label: "Elizabeth the 3rd", score: "vintage" },
-      { label: "Love Actually", score: "elegant" },
+      { label: "I’m winning this", score: "hypeBro" },
+      { label: "Double or nothing", score: "rideOrDie" },
+      { label: "Stack the odds", score: "chillPhilosopher" },
+      { label: "Only for laughs", score: "wildCard" },
+    ],
+  },
+  {
+    text: "Your buddy calls at 3 a.m. 📱 What’s your move?",
+    options: [
+      { label: "I’m on my way", score: "rideOrDie" },
+      { label: "Uber a solution", score: "chillPhilosopher" },
+      { label: "Help, then scold", score: "hypeBro" },
+      { label: "Call back later", score: "wildCard" },
+    ],
+  },
+  {
+    text: "What’s your idea of ‘cool’? 😎",
+    options: [
+      { label: "Break the rules", score: "wildCard" },
+      { label: "Quiet confidence", score: "chillPhilosopher" },
+      { label: "Style and charm", score: "hypeBro" },
+      { label: "Be yourself", score: "rideOrDie" },
+    ],
+  },
+  {
+    text: "At a party 🎉, you are…",
+    options: [
+      { label: "On the dance floor", score: "hypeBro" },
+      { label: "Deep in convo", score: "chillPhilosopher" },
+      { label: "Stargazing outside", score: "wildCard" },
+      { label: "Hosting the fun", score: "rideOrDie" },
+    ],
+  },
+  {
+    text: "So, what’s your style vibe? 👟",
+    options: [
+      { label: "Comfort first", score: "rideOrDie" },
+      { label: "Clean and sharp", score: "chillPhilosopher" },
+      { label: "Bold statements", score: "hypeBro" },
+      { label: "Whatever works", score: "wildCard" },
+    ],
+  },
+  {
+    text: "Meeting new people 🤝, you are…",
+    options: [
+      { label: "Mysterious", score: "wildCard" },
+      { label: "Low-key", score: "chillPhilosopher" },
+      { label: "Confident", score: "hypeBro" },
+      { label: "Approachable", score: "rideOrDie" },
     ],
   },
 ];
 
 // #3: Defining Results
 const results = {
-  minimalist: {
-    persona: "The Minimalist",
-    description: "You value simplicity and elegance in everything you create.",
+  rideOrDie: {
+    persona: "The Ride-or-Die Bro",
+    description: "You’re the foundation of any crew—the guy who shows up when it matters most.\n\nLoyalty is your trademark, and you take pride in being the friend everyone can count on.\n\nYou thrive on camaraderie and never shy away from taking the lead when things need fixing.\n\nJust remember, bro: it’s okay to lean on others too.\n\nYou’re only human.",
   },
-  vintage: {
-    persona: "The Storyteller",
-    description: "Your designs are inspired by the beauty of the past.",
+  chillPhilosopher: {
+    persona: "The Chill Philosopher Bro",
+    description: "You’re the guy with a laid-back approach to life, valuing peace and deep conversations over chaos and noise.\n\nPeople gravitate to your steady energy and appreciate your ability to find meaning in the mundane.\n\nYou’re the type to suggest a road trip just to 'figure things out' or to lose track of time watching the stars.\n\nStay grounded, but don’t forget to let loose now and then.",
   },
-  bold: {
-    persona: "The Innovator",
-    description: "You love taking risks and creating designs that stand out.",
+  hypeBro: {
+    persona: "The Hype Bro",
+    description: "You’re all about energy, fun, and keeping the good times rolling.\n\nWhen you’re around, there’s never a dull moment.\n\nYou thrive on spontaneity and know how to light up a room with your presence.\n\nJust remember, bro, not every moment needs to be high-octane—embrace,\n\nit's sometimes to stay calm and cool, let the world catch up to you.",
   },
-  elegant: {
-    persona: "The Visionary",
-    description: "You have a refined eye and create timeless works of art.",
-  }
-}
+  wildCard: {
+    persona: "The Wild Card Bro",
+    description: "You defy expectations at every turn, living life as one unpredictable adventure after another.\n\nWhether it’s spontaneous plans or unorthodox solutions, you keep people on their toes.\n\nPeople love your unconventional approach to life, but sometimes, bro, a little stability isn’t a bad thing.\n\nEmbrace your chaos—but keep it balanced.",
+  },
+};
 
 // #4: Track the quiz state
 let currentQuestionIndex = 0; // This tracks the current question
@@ -126,9 +171,13 @@ function renderQuestion() {
 
     // Step 8: Add the 'answer' class to the button for styling purposes
     button.classList.add('answer');
+    // Add a span inside the button for text
+    const span = document.createElement('span');
+    // Step 9: Set the inner text for the span to display the label/question of the current option
+    span.innerText = option.label;
 
-    // Step 9: Set the inner text of the button to display the label of the current option
-    button.innerText = option.label;
+    // Append the span to the button
+    button.appendChild(span);
 
     // Handle answer click
     button.addEventListener('click', () => {
@@ -142,6 +191,7 @@ function renderQuestion() {
         showResults();
       }
     });
+    // Step 9: Append the button to the answers container
     answersContainer.appendChild(button);
   });
 
@@ -160,7 +210,8 @@ function showResults() {
     scores[a] > scores[b] ? a : b);
 
   // Update the results section 
-  personaElement.innerText = results[topScore].persona;
+  const personaName = results[topScore].persona;
+  personaElement.innerText = `"${personaName}"`; // Wrapping in quotes
   descriptionElement.innerText = results[topScore].description;
 
   // Show the results page
