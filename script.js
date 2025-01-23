@@ -88,19 +88,19 @@ const questions = [
 const results = {
   rideOrDie: {
     persona: "The Ride-or-Die Bro",
-    description: "You’re the foundation of any crew—the guy who shows up when it matters most.\n\nLoyalty is your trademark, and you take pride in being the friend everyone can count on.\n\nYou thrive on camaraderie and never shy away from taking the lead when things need fixing.\n\nJust remember, bro: it’s okay to lean on others too.\n\nYou’re only human.",
+    description: "You’re the foundation of any crew—the guy who shows up when it matters most.\n\nLoyalty is your trademark, and you take pride in being the friend everyone can count on.\n\nYou thrive on camaraderie and never shy away from taking the lead when things need fixing.\n\nBut just remember bro, it’s okay to lean on others too.\n\nYou’re only human.",
   },
   chillPhilosopher: {
     persona: "The Chill Philosopher Bro",
-    description: "You’re the guy with a laid-back approach to life, valuing peace and deep conversations over chaos and noise.\n\nPeople gravitate to your steady energy and appreciate your ability to find meaning in the mundane.\n\nYou’re the type to suggest a road trip just to 'figure things out' or to lose track of time watching the stars.\n\nStay grounded, but don’t forget to let loose now and then.",
+    description: "You’re the guy with a laid-back approach to life, valuing peace and deep conversations over chaos and noise.\n\nPeople gravitate to your steady energy and appreciate your ability to find meaning in the mundane.\n\nYou’re the type to suggest a road trip just to 'figure things out' or to lose track of time watching the stars.\n\nBut don't forget to stay grounded, and let loose now and then.",
   },
   hypeBro: {
     persona: "The Hype Bro",
-    description: "You’re all about energy, fun, and keeping the good times rolling.\n\nWhen you’re around, there’s never a dull moment.\n\nYou thrive on spontaneity and know how to light up a room with your presence.\n\nJust remember, bro, not every moment needs to be high-octane—embrace,\n\nit's sometimes to stay calm and cool, let the world catch up to you.",
+    description: "You’re all about energy, fun, and keeping the good times rolling.\n\nWhen you’re around, there’s never a dull moment.\n\nYou thrive on spontaneity and know how to light up a room with your presence.\n\nBut just remember, bro, not every moment needs to be high-octane,\n\nit's sometimes good to stay calm and cool, let the world catch up to you.",
   },
   wildCard: {
     persona: "The Wild Card Bro",
-    description: "You defy expectations at every turn, living life as one unpredictable adventure after another.\n\nWhether it’s spontaneous plans or unorthodox solutions, you keep people on their toes.\n\nPeople love your unconventional approach to life, but sometimes, bro, a little stability isn’t a bad thing.\n\nEmbrace your chaos—but keep it balanced.",
+    description: "You defy expectations at every turn, living life as one unpredictable adventure after another.\n\nWhether it’s spontaneous plans or unorthodox solutions, you keep people on their toes.\n\nPeople love your unconventional approach to life. But sometimes, bro, a little stability isn’t a bad thing.\n\nEmbrace your chaos, but keep it balanced.",
   },
 };
 
