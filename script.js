@@ -100,7 +100,7 @@ const results = {
   },
   wildCard: {
     persona: "The Wild Card Bro",
-    description: "You defy expectations at every turn, living life as one unpredictable adventure after another.\n\nWhether it’s spontaneous plans or unorthodox solutions, you keep people on their toes.\n\nPeople love your unconventional approach to life. But sometimes, bro, a little stability isn’t a bad thing.\n\nEmbrace your chaos, but keep it balanced.",
+    description: "You defy expectations at every turn.\n\nYou live life as one unpredictable adventure after another.\n\nWhether it’s spontaneous plans or unorthodox solutions, you keep people on their toes.\n\nPeople love your unconventional approach to life. But sometimes, bro, a little stability isn’t a bad thing.\n\nEmbrace your chaos, but keep it balanced.",
   },
 };
 
