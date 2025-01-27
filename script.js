@@ -88,7 +88,7 @@ const questions = [
 const results = {
   rideOrDie: {
     persona: "The Ride-or-Die Bro",
-    description: "You’re the foundation of any crew—the guy who shows up when it matters most.\n\nLoyalty is your trademark, and, you take pride in being the friend everyone can count on.\n\nYou thrive on camaraderie and never shy away from taking the lead when things need fixing.\n\nBut just remember bro, it’s okay to lean on others too.\n\nYou’re only human.",
+    description: "You’re the foundation of any crew—the guy who shows up when it matters most.\n\nLoyalty is your trademark, and, you take pride in being the friend everyone can count on.\n\nYou thrive on camaraderie and never shy away from taking the lead when things need fixing.\n\nBut just remember bro, it’s okay to lean on others too.\n\nYou’re only human after all",
   },
   chillPhilosopher: {
     persona: "The Chill Philosopher Bro",
