@@ -1,6 +1,6 @@
 Decided to create a fun little quiz to share with some friends. 
 
-[https://github.com/j4ke-m4loney/bro-quiz/blob/main/images/broQuiz.png]
+[!Bro Quiz from page][broQuiz.png]
 
 Live version of the [Bro Quiz is here][https://what-bro-are-you-quiz.netlify.app/] 
 
@@ -19,8 +19,8 @@ Live version of the [Bro Quiz is here][https://what-bro-are-you-quiz.netlify.app
 - Bring a bit of fun a joy and provide an engaging experience.
 
 ## Future Enhancements
-- **Create a custom leader bored: a place where people can see where they rank amoung others.
+- **Create a custom leader bored**: A page where people can see rankings amoung others
 
 - ## Contributing
-Contributions are welcome! If you'd like to improve the quiz, feel free to fork the repository and submit a pull request.
+Contributions are welcome! If you'd like to improve the quiz, feel free to fork the repository and submit a pull request
 
