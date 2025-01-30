@@ -2,7 +2,7 @@ I created a quiz to share with friends.
 
 ![Bro Quiz from page](images/broQuiz.png)
 
-<p>Live version of the <a href="https://what-bro-are-you-quiz.netlify.app/" target="_blank" rel="noopener noreferrer">Bro Quiz is here</a></p>
+[Live version of the Bro Quiz is here](https://what-bro-are-you-quiz.netlify.app/) (Right-click & open in new tab)
 
 ## Features 
 - **Fun questions**: A series of 8 questions
