@@ -1,6 +1,6 @@
 Decided to create a fun little quiz to share with some friends. 
 
-[!Bro Quiz from page][/images/broQuiz.png]
+![Bro Quiz from page][images/broQuiz.png]
 
 Live version of the [Bro Quiz is here][https://what-bro-are-you-quiz.netlify.app/] 
 
