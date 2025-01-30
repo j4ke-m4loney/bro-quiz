@@ -2,6 +2,8 @@ I created a quiz to share with friends.
 
 ![Bro Quiz from page](images/broQuiz.png)
 
+<p>Live version of the <a href="https://what-bro-are-you-quiz.netlify.app/" target="blank">Bro Quiz is here</a></p>
+
 Live version of the [Bro Quiz is here.](https://what-bro-are-you-quiz.netlify.app/)
 
 ## Features 
