@@ -21,6 +21,6 @@ Live version of the [Bro Quiz is here](https://what-bro-are-you-quiz.netlify.app
 ## Future Enhancements
 - **Create a custom leader bored**: A page where people can see rankings amoung others
 
-- ## Contributing
+## Contributing
 Contributions are welcome! If you'd like to improve the quiz, feel free to fork the repository and submit a pull request
 
